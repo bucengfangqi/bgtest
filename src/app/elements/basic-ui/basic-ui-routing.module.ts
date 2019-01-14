@@ -9,7 +9,7 @@ const routes: Routes = [    {
   pathMatch: 'full',
 },
 {
-  path: 'buttons',
+  path: 'buttons/:id',
   component: ButtonComponent,
   data: {
       title: '按钮'

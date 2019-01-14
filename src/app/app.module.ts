@@ -11,6 +11,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesModule } from './heroes/heroes.module';
 
 import { ElementsModule } from './elements/elements.module';
+import { UtilsModule } from './utils/utils.module';
 
 import { TestComponent } from './test/test.component';
 
@@ -28,6 +29,7 @@ import { TestComponent } from './test/test.component';
     AppRoutingModule,
     HeroesModule,
     ElementsModule,
+    UtilsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

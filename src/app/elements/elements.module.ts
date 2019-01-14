@@ -6,7 +6,7 @@ import { ElementsRoutingModule } from './elements-routing.module';
 @NgModule({
   imports: [
     CommonModule,
-    ElementsRoutingModule
+    ElementsRoutingModule,
   ],
   declarations: []
 })

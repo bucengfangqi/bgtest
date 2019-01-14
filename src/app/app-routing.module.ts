@@ -9,8 +9,12 @@ const routes: Routes = [
     loadChildren: './elements/elements.module#ElementsModule'
   },
   {
+    path: 'utils',
+    loadChildren: './utils/utils.module#UtilsModule'
+  },
+  {
     path: '',
-    redirectTo: '',
+    redirectTo: 'utils',
     pathMatch: 'full'
   }
 ];
