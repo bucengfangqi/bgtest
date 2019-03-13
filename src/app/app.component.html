@@ -1,6 +1,6 @@
-<button routerLink="/elements/basic-ui/buttons/33">buttons</button>
-<button routerLink="/elements">select</button>
-<button routerLink="/elements/basic-ui/pannel">pannel</button>
-<button routerLink="/elements/layout">布局</button>
-<button routerLink="/utils">工具</button>
+<a [routerLink]="['/anything']" routerLinkActive="router-link-active" >随便写点什么</a>
+<a [routerLink]="['/util']" routerLinkActive="router-link-active" >工具页面-01</a>
+<a [routerLink]="['/util/page-two']" routerLinkActive="router-link-active" >工具页面-02</a>
+<a [routerLink]="['/util/page-three']" routerLinkActive="router-link-active" >工具页面-03</a>
+
 <router-outlet></router-outlet>

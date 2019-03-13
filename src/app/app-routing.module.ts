@@ -1,22 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AnythingComponent } from './show-page/anything/anything.component';
 
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+
 const routes: Routes = [
-  
   {
-    path: 'elements',
-    loadChildren: './elements/elements.module#ElementsModule'
+    path: 'util',
+    loadChildren: './util/util.module#UtilModule',
   },
-  {
-    path: 'utils',
-    loadChildren: './utils/utils.module#UtilsModule'
-  },
-  {
-    path: '',
-    redirectTo: 'utils',
-    pathMatch: 'full'
-  }
+  { path: '', redirectTo: '/anything', pathMatch: 'full' },
+  { path: '**', component: AnythingComponent}
 ];
 @NgModule({
   exports: [ RouterModule ],

@@ -5,21 +5,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './/app-routing.module';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-
-import { HeroesModule } from './heroes/heroes.module';
-
-import { ElementsModule } from './elements/elements.module';
-import { UtilsModule } from './utils/utils.module';
-
-import { TestComponent } from './test/test.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AnythingComponent } from './show-page/anything/anything.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroDetailComponent,
-    TestComponent,
+    AnythingComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,9 +19,6 @@ import { TestComponent } from './test/test.component';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    HeroesModule,
-    ElementsModule,
-    UtilsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
