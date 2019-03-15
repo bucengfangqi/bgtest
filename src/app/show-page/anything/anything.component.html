@@ -1,3 +1,13 @@
-<p>
-  anything works!
-</p>
+<style>
+    .block {
+        height: 200px;
+        border: 1px dotted #999;
+        position: fixed;
+        display: block;
+        width:400px;
+        cursor: all-scroll;
+    }
+</style>
+<div class="block" [ngStyle]="currentStyles">
+    {{num|json}} 
+</div>

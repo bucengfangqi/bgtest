@@ -1,6 +1,14 @@
-<a [routerLink]="['/anything']" routerLinkActive="router-link-active" >随便写点什么</a>
-<a [routerLink]="['/util']" routerLinkActive="router-link-active" >工具页面-01</a>
-<a [routerLink]="['/util/page-two']" routerLinkActive="router-link-active" >工具页面-02</a>
-<a [routerLink]="['/util/page-three']" routerLinkActive="router-link-active" >工具页面-03</a>
+<nav>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button [routerLink]="['/anything']" routerLinkActive="router-link-active" type="button"
+            class="btn btn-outline-primary">随便写点什么</button>
+        <button [routerLink]="['/util/page-one']" routerLinkActive="router-link-active" type="button"
+            class="btn btn-outline-primary">工具页面-01</button>
+        <button [routerLink]="['/util/page-two']" routerLinkActive="router-link-active" type="button"
+            class="btn btn-outline-primary">工具页面-02</button>
+        <button [routerLink]="['/util/page-three']" routerLinkActive="router-link-active" type="button"
+            class="btn btn-outline-primary">工具页面-03</button>
+    </div>
+</nav>
 
 <router-outlet></router-outlet>
